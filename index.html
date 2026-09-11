@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pascha Restaurant — a demo Indian restaurant concept for good food and great moments.">
+    <title>Pascha Restaurant — Good Food. Great Moments.</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23f6f1e7' stroke='%231f5e61' stroke-width='2'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia' font-size='34' fill='%231f5e61'%3EP%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="site-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="page-wrap header-inner">
+        <a class="brand" href="#home" aria-label="Pascha Restaurant home">
+          <span class="brand-mark">P</span>
+          <span>
+            <strong>Pascha</strong>
+            <small>Restaurant concept · demo</small>
+          </span>
+        </a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a class="active" href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#story">Our Story</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#visit">Visit</a>
+        </nav>
+        <div class="header-actions">
+          <a class="icon-button search-jump" href="#menu" aria-label="Search the menu">⌕</a>
+          <a class="whatsapp-button compact" data-whatsapp href="#" target="_blank" rel="noreferrer">Order on WhatsApp <span>↗</span></a>
+          <button class="table-button" id="open-cart" type="button"><span>▣</span> Your table <b id="cart-count">0</b></button>
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#story">Our Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="page-wrap hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Restaurant concept · demo menu</p>
+            <h1>Good food.<br><em>Great</em><br>moments.</h1>
+            <p class="hero-lede">Discover delicious flavours, freshly prepared and made to bring people together.</p>
+            <div class="button-row">
+              <a class="button primary" href="#menu">See the menu <span>↗</span></a>
+              <a class="button secondary" href="#story">Meet Pascha</a>
+            </div>
+          </div>
+          <div class="hero-visual reveal reveal-delay-1">
+            <div class="hero-image image-crop">
+              <img src="https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Indian dishes served on a table">
+            </div>
+            <div class="hero-note">
+              <span class="eyebrow">Tonight's note</span>
+              <strong>Come hungry.<br>Leave glowing.</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section browse-section" aria-labelledby="browse-title">
+        <div class="page-wrap">
+          <p class="eyebrow">Browse by craving</p>
+          <div class="section-heading">
+            <h2 id="browse-title">Explore our<br><em>favourites.</em></h2>
+            <p>A little heat, a lot of heart. Pick a table favourite and let the good times begin.</p>
+          </div>
+          <div class="category-highlights">
+            <button class="category-card category-card-large" data-category="Starters" type="button">
+              <img src="https://images.pexels.com/photos/6646073/pexels-photo-6646073.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Crispy starter">
+              <span><b>Small plates</b><strong>Starters <i>↗</i></strong></span>
+            </button>
+            <button class="category-card category-card-offset" data-category="Main Course" type="button">
+              <img src="https://images.pexels.com/photos/9609849/pexels-photo-9609849.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Paneer main course">
+              <span><b>Slow & soulful</b><strong>Main course <i>↗</i></strong></span>
+            </button>
+            <button class="category-card" data-category="Biryani & Rice" type="button">
+              <img src="https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Fragrant biryani">
+              <span><b>Fragrant & warm</b><strong>Biryani & rice <i>↗</i></strong></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-banner">
+        <div class="page-wrap promo-inner">
+          <span class="promo-star">✳</span>
+          <strong>Make tonight delicious.</strong>
+          <span>Browse our demo menu and send your order on WhatsApp.</span>
+          <a href="#menu">View the menu <b>↗</b></a>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+        <div class="page-wrap">
+          <p class="eyebrow">The menu</p>
+          <div class="section-heading menu-heading">
+            <div>
+              <h2 id="menu-title">A little heat.<br>A lot of <em>heart.</em></h2>
+              <p>The menu changes with the market, but the spirit stays generous. Start with something to share, choose a curry, and let the table decide the rest.</p>
+            </div>
+            <div class="menu-controls">
+              <label class="search-box">
+                <span>⌕</span>
+                <input id="menu-search" type="search" placeholder="Search dishes, ingredients..." aria-label="Search menu">
+              </label>
+              <div class="filter-row" id="category-filters"></div>
+              <div class="sort-row">
+                <label for="sort-menu">Sort</label>
+                <select id="sort-menu">
+                  <option value="featured">Featured</option>
+                  <option value="low">Price: Low to High</option>
+                  <option value="high">Price: High to Low</option>
+                </select>
+                <button class="filter-button active" data-dietary="all" type="button">All dietary</button>
+                <button class="filter-button" data-dietary="vegetarian" type="button">Vegetarian</button>
+                <button class="filter-button" data-dietary="non-vegetarian" type="button">Non-Vegetarian</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-meta">
+            <span id="dish-count">24 dishes</span>
+            <button id="clear-filters" type="button" hidden>Clear filters</button>
+          </div>
+          <div class="menu-grid" id="menu-grid"></div>
+          <p class="empty-state" id="empty-state" hidden>No dishes match those filters. Try a different craving.</p>
+        </div>
+      </section>
+
+      <section class="section story-section" id="story">
+        <div class="page-wrap story-grid">
+          <div class="story-image image-crop">
+            <img src="https://images.pexels.com/photos/1098592/pexels-photo-1098592.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Dessert served at Pascha">
+            <span class="story-stamp">Made for<br>good moments</span>
+          </div>
+          <div class="story-copy">
+            <p class="eyebrow">Why choose Pascha</p>
+            <h2>Food that makes<br>room for <em>everyone.</em></h2>
+            <p>Pascha is a warm, welcoming restaurant concept built around generous plates, familiar flavours, and the people gathered around them.</p>
+            <div class="feature-list">
+              <div><span>01</span><strong>Freshly prepared</strong><p>Every plate is made to order with care.</p></div>
+              <div><span>02</span><strong>Something for everyone</strong><p>Vegetarian, non-vegetarian, spicy or gentle.</p></div>
+              <div><span>03</span><strong>Good energy only</strong><p>A relaxed table for ordinary days and celebrations.</p></div>
+            </div>
+            <a class="text-link" href="#visit">Plan your visit <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="page-wrap">
+          <div class="section-heading gallery-heading">
+            <div><p class="eyebrow">A taste of Pascha</p><h2>Gather around<br><em>the table.</em></h2></div>
+            <p>Bright plates, warm light, and plenty of reasons to stay for dessert.</p>
+          </div>
+          <div class="gallery-grid">
+            <img class="gallery-tall image-crop" src="https://images.pexels.com/photos/5718026/pexels-photo-5718026.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Spiced chicken dish">
+            <img class="image-crop" src="https://images.pexels.com/photos/9609844/pexels-photo-9609844.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Fresh naan bread">
+            <img class="image-crop" src="https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Indian dessert">
+          </div>
+        </div>
+      </section>
+
+      <section class="visit-section" id="visit">
+        <div class="page-wrap visit-grid">
+          <div>
+            <p class="eyebrow">Come say hello</p>
+            <h2>Your table<br>is <em>waiting.</em></h2>
+            <p class="visit-copy">This is a demo restaurant concept. Swap the contact details in <code>app.js</code> when you are ready to make it yours.</p>
+            <div class="contact-links">
+              <a data-phone href="tel:+918946052144">+91 8946052144</a>
+              <a data-email href="mailto:hello@pascha-demo.com">hello@pascha-demo.com</a>
+              <a data-maps href="#" target="_blank" rel="noreferrer">Avadi, Tamil Nadu ↗</a>
+            </div>
+          </div>
+          <div class="hours-card">
+            <p class="eyebrow">Opening hours</p>
+            <div class="hours-list">
+              <div><span>Monday — Thursday</span><b>11:00 am — 10:30 pm</b></div>
+              <div><span>Friday — Saturday</span><b>11:00 am — 11:00 pm</b></div>
+              <div><span>Sunday</span><b>11:00 am — 10:30 pm</b></div>
+            </div>
+            <a class="button light" href="#menu">Build your order <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-wrap footer-top">
+        <a class="brand light-brand" href="#home"><span class="brand-mark">P</span><span><strong>Pascha</strong><small>Restaurant concept · demo</small></span></a>
+        <p>Good food.<br><em>Great moments.</em></p>
+        <a class="whatsapp-button" data-whatsapp href="#" target="_blank" rel="noreferrer">WhatsApp us <span>↗</span></a>
+      </div>
+      <div class="page-wrap footer-bottom"><span>© 2026 Pascha Restaurant · Demo concept</span><span>Designed by  Gamma Media Labs</span><a href="#home">Back to top ↑</a></div>
+    </footer>
+
+    <a class="floating-whatsapp" data-whatsapp href="#" target="_blank" rel="noreferrer"><span>◌</span> WhatsApp us</a>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+      <div class="drawer-backdrop" data-close-cart></div>
+      <div class="drawer-panel">
+        <div class="drawer-header"><div><p class="eyebrow">Your table</p><h2>Your order</h2></div><button class="close-button" data-close-cart type="button" aria-label="Close cart">×</button></div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-empty" id="cart-empty"><span>✳</span><p>Your table is waiting.<br>Add something delicious.</p><a class="text-link" href="#menu" data-close-cart>Browse the menu ↗</a></div>
+        <div class="cart-summary" id="cart-summary">
+          <div><span>Subtotal</span><strong id="cart-total">₹0</strong></div>
+          <button class="button primary full" id="open-order" type="button">Continue to order <span>↗</span></button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="modal-backdrop" id="dish-modal" aria-hidden="true">
+      <div class="modal-card dish-modal-card" role="dialog" aria-modal="true" aria-labelledby="dish-modal-title">
+        <button class="close-button modal-close" data-close-modal type="button" aria-label="Close dish details">×</button>
+        <img id="dish-modal-image" src="" alt="">
+        <div class="modal-body"><p class="eyebrow" id="dish-modal-category"></p><h2 id="dish-modal-title"></h2><p id="dish-modal-description"></p><div class="modal-price-row"><strong id="dish-modal-price"></strong><button class="button primary" id="dish-modal-add" type="button">Add to table <span>+</span></button></div></div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="order-modal" aria-hidden="true">
+      <div class="modal-card order-modal-card" role="dialog" aria-modal="true" aria-labelledby="order-title">
+        <button class="close-button modal-close" data-close-order type="button" aria-label="Close order form">×</button>
+        <p class="eyebrow">Almost there</p>
+        <h2 id="order-title">Send your order<br><em>to Pascha.</em></h2>
+        <form id="order-form">
+          <div class="form-grid">
+            <label>Full name<input name="name" required placeholder="Your name"></label>
+            <label>Phone<input name="phone" required type="tel" placeholder="+91"></label>
+          </div>
+          <fieldset><legend>Order type</legend><label><input type="radio" name="orderType" value="Dine In" checked> Dine In</label><label><input type="radio" name="orderType" value="Takeaway"> Takeaway</label></fieldset>
+          <div class="form-grid"><label>Table number <span class="optional">optional</span><input name="table" placeholder="e.g. 12"></label><label>Address <span class="optional">optional</span><input name="address" placeholder="For takeaway delivery"></label></div>
+          <label>Additional notes <span class="optional">optional</span><textarea name="notes" rows="3" placeholder="Any preferences or requests?"></textarea></label>
+          <button class="button primary full" type="submit">Open WhatsApp order <span>↗</span></button>
+          <p class="form-note">Your order will open in WhatsApp with the details filled in for you.</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
